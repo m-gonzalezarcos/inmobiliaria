@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center; 
+}
+
+body {
+   background-color: #fff;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16px;
+   color: #fff;
+}
+
+.contenedor {
+    background-color: #696969;
+    display: flex;
+}
+
+/* sección valores */
+.contenedor .valores {
+    width: 30%;
+    min-height: 100vh;
+    border-right: 1px solid #fff;
+    text-align: center;
+}
+
+.valores nav .btn {
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #ffb700;
+    border: none;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.valores nav p {
+    margin-top: 15px;
+}
+
+.valores nav .btn:hover {
+    background-color: #c08a01;
+}
+
+.valores nav .label{    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.valores nav {
+    width: 70%;
+    margin: auto;
+    margin-top: 35px;
+    padding-bottom: 10px;
+}
+
+.valores nav .cuartos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.valores nav .cuartos input {
+  margin-top: 10px;
+  padding: 5px;
+  outline: none;
+  border: none;  
+}
+
+.valores nav .metros {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px; 
+}
+
+.valores nav .metros input {
+    width: 47%;
+    margin-top: 10px;
+    padding: 5px 0;
+    outline: none;
+    border: none;  
+}
+/* cierre seccion valores */
+
+
+  /* Propiedades */
+.contenedorPropiedades {
+  width: 70%;
+}
+
+  .propiedades {
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .py-3 {
+    margin-top: 20px;
+  }
+
+  .contenedorTarjeta {
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* la clase .propiedad esta contenida en contenedorTarjeta */
+  .propiedad {
+    background-color: #959595;
+    box-shadow: 0px 0px 10px #000;
+    border: 2px solid #ffb700;
+    width: 100%;
+    margin-top: 10px;
+    height: 100%;
+  }
+
+  .propiedad .img {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .propiedad .card {
+    padding: 10px 20px;
+  }
+  
+  .propiedad .card p {
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+
+  
+
+  .propiedad .cuartosMetros p{
+    font-size: 0.9em;
+
+  }
+
+  .propiedad .btn {
+    padding: 7px 15px;
+    margin-top:10px;
+    background-color: #0191d4;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .propiedad .btn:hover {
+    background-color: #026a9b;  
+  }
+
+  /* media queries */
+  @media (max-width: 576px){
+    .contenedorTarjeta {
+      width: 100%;
+      
+    }
+  }
+
+  @media (min-width: 576px){
+    .contenedorTarjeta {
+      width: 50%; 
+    }
+  }
+
+  @media (min-width: 768px){
+    .contenedorTarjeta {
+      width: 33.3%; 
+    }
+  }
+
+  @media (min-width: 992px){
+    .contenedorTarjeta {
+      width: 25%; 
+    }
+  }
+
+
+  

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio - Inmobiliaria</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="contenedor">
+        
+        <!-- sección valores -->
+        <section class="valores">
+            <nav>
+                <div class="cuartos">
+                    <label for="cantidadCuartos">Cantidad de Cuartos</label>
+                    <input type="number" id="cantidadCuartos" placeholder="N° de cuartos">
+                 </div>
+
+                 <p>Metros cuadrados</p>
+
+                <div class="label"> 
+                    <label for="metrosDesde">Desde</label>
+                    <label for="metrosHasta">Hasta</label>
+                </div>
+
+                <div class="metros">
+                    <input type="number" id="metrosDesde" placeholder="Mt desde">
+                    <input type="number" id="metrosHasta" placeholder="Mt hasta">
+                </div>
+                <button type="button" class="btn" id="buscar">Buscar</button>
+            </nav>
+        </section>
+<!-- cierre sección valores -->
+
+        <section id="propiedades" class="contenedorPropiedades">
+            <h4 class="py-3">Total: <span id="total">0</span></h4>
+            <div id="galeria-propiedades" class="propiedades"></div>
+        </section>
+        
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
